@@ -1,0 +1,85 @@
+/* ----------------- */
+/* Custom properties */
+/* ----------------- */
+:root{
+    /* colors */
+    --clr-Orange: hsl(25, 97%, 53%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Light-Grey: hsl(217, 12%, 63%);
+    --clr-Medium-Grey: hsl(216, 12%, 54%);
+    --clr-Dark-Blue: hsl(213, 19%, 18%);
+    --clr-Very-Dark-Blue: hsl(216, 12%, 8%);
+ 
+
+    /* font-sizes */
+    --fs-heading:1.7rem;
+    /* font-families */
+    --ff-Overpass: 'Overpass', sans-serif;
+}
+
+/* ----------------- */
+/* Reset------------ */
+/* ----------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+p,
+figure,
+picture{
+    margin: 0;
+}
+body{
+    line-height: 1.5;
+    display: block;
+    font-size: 0.938 rem;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--clr-Very-Dark-Blue);
+}
+
+img,
+picture{
+    max-width: 100%;
+    display: block;
+}
+
+button{
+    font-size: inherit;
+}
+
+/* ---------------- */
+/* Utility class    */
+/* ---------------- */
+
+/* genral */
+
+.flex{
+    display:flex;
+    gap: var(--gap,1rem);
+}
+
+.container{
+    padding-inline:2rem;
+    margin-inline: auto;
+    max-width: 80rem;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+
+    /* for test only */
+    color: var(--clr-White);
+}
+
+.rating_block{
+
+}
