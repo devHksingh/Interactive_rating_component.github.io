@@ -1,20 +1,19 @@
 /* ----------------- */
 /* Custom properties */
 /* ----------------- */
-:root{
-    /* colors */
-    --clr-Orange: hsl(25, 97%, 53%);
-    --clr-White: hsl(0, 0%, 100%);
-    --clr-Light-Grey: hsl(217, 12%, 63%);
-    --clr-Medium-Grey: hsl(216, 12%, 54%);
-    --clr-Dark-Blue: hsl(213, 19%, 18%);
-    --clr-Very-Dark-Blue: hsl(216, 12%, 8%);
- 
+:root {
+  /* colors */
+  --clr-Orange: hsl(25, 97%, 53%);
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Light-Grey: hsl(217, 12%, 63%);
+  --clr-Medium-Grey: hsl(216, 12%, 54%);
+  --clr-Dark-Blue: hsl(213, 19%, 18%);
+  --clr-Very-Dark-Blue: hsl(216, 12%, 8%);
 
-    /* font-sizes */
-    --fs-heading:1.7rem;
-    /* font-families */
-    --ff-Overpass: 'Overpass', sans-serif;
+  /* font-sizes */
+  --fs-heading: 1.7rem;
+  /* font-families */
+  --ff-Overpass: "Overpass", sans-serif;
 }
 
 /* ----------------- */
@@ -24,8 +23,8 @@
 /* Box sizing */
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
 }
 
 /* Reset margins */
@@ -36,167 +35,144 @@ h2,
 h3,
 p,
 figure,
-picture{
-    margin: 0;
+picture {
+  margin: 0;
 }
-body{
-    line-height: 1.5;
-    display: block;
-    font-size: 0.938 rem;
-    font-family: 'Overpass', sans-serif;
-    background-color: var(--clr-Very-Dark-Blue);
+body {
+  line-height: 1.5;
+  display: block;
+  font-size: 0.938 rem;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--clr-Very-Dark-Blue);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 img,
-picture{
-    max-width: 100%;
-    display: block;
+picture {
+  max-width: 100%;
+  display: block;
 }
 
-button{
-    font-size: inherit;
+button {
+  font-size: inherit;
 }
 
 /* ---------------- */
 /* Utility class    */
 /* ---------------- */
 
-/* genral */
+/* Genral */
 
-.flex{
-    display:flex;
-    gap: var(--gap,1rem);
-    align-content: space-around;
-    justify-content: space-evenly;
-    
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+  align-content: space-around;
+  justify-content: space-evenly;
 }
 
-.container{
-    position: absolute;
-    /* padding-inline:2.75rem; */
-    margin-inline: auto;
-    padding: 2.75rem;
-    padding-inline:1.8rem;
-    
-    /* width: 90%;
-    max-width: 26%;
-    min-width: 90%; */
-    
-    max-width:26rem ;
-    min-width: 23.8rem;
-
-    /* width: 20%; */
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left:50%;
-    border-radius: 1.95em;
-    background-color: hsl(217, 16%, 17%);
-    /* border:hsl(217, 16%, 17%) solid 1px ; */
-    /* for test only */
-    /* color: var(--clr-White); */
-    
+.container {
+  position: absolute;
+  margin-inline: auto;
+  padding: 2.75rem;
+  padding-inline: 1.8rem;
+  max-width: 26rem;
+  min-width: 23.8rem;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 1.95em;
+  background-color: hsl(217, 16%, 17%);
 }
 
-.icon_star{
-    /* border: 1px solid wheat; */
-    margin-bottom: 1.25rem;
-    padding: 0.55rem;
-    border-radius: 1rem;
-    background-color:  hsl(214, 17%, 24%);
+.icon_star {
+  margin-bottom: 1.25rem;
+  padding: 0.55rem;
+  border-radius: 1rem;
+  background-color: hsl(214, 17%, 24%);
 }
 
-h1{
-    font-weight: 700;
-    color: var(--clr-White);
-    font-size: 1.65rem;
-    margin-bottom: 0.5rem;
+h1 {
+  font-weight: 700;
+  color: var(--clr-White);
+  font-size: 1.65rem;
+  margin-bottom: 0.5rem;
 }
 
-.rating_block{
-   font-weight: 400;
-   color: var(--clr-Medium-Grey);
-   
+.rating_block {
+  font-weight: 400;
+  color: var(--clr-Medium-Grey);
 }
 
-.rating_block p{
-    margin-bottom: 0.65rem;
-    /* text-align-last: justify; */
+.rating_block p {
+  margin-bottom: 0.65rem;
 }
 
-.rating_number a{
-    /* align-items: center; */
-    /* border: 1px solid white; */
-    margin-bottom: 1.65rem;
-    padding: 0.59rem;
-    padding-inline:1rem;
-    border-radius: 50%;
-    /* font-size: 1rem; */
-    background-color: hsl(216,14%, 22%);
-    color: hsl(216, 12%, 54%);
-    font-weight: 700;
+.rating_number a {
+  margin-bottom: 1.65rem;
+  padding: 0.59rem;
+  padding-inline: 1rem;
+  border-radius: 50%;
+
+  background-color: hsl(216, 14%, 22%);
+  color: hsl(216, 12%, 54%);
+  font-weight: 700;
+  margin: 0;
 }
 
-.rating_number a:hover,a:link{
-    background-color: var(--clr-Light-Grey);
-    color: var(--clr-White);
+.rating_number a:hover,
+a:link {
+  background-color: var(--clr-Light-Grey);
+  color: var(--clr-White);
 }
 
-.rating_number a:active,a:focus{
-    background-color: var(--clr-Orange);
-    color: var(--clr-White);
+.rating_number a:active,
+a:focus {
+  background-color: var(--clr-Orange);
+  color: var(--clr-White);
 }
 
-.btn-submit{
-    display: block;
-    padding: 0.3rem;
-    text-align: center;
-    border-radius: 1rem;
-    font-weight: 700;
-    background-color: var(--clr-Orange);
-    /* font-family: var(--ff-Overpass); */
-    color: var(--clr-White);
-    
+.btn-submit {
+  display: block;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-weight: 700;
+  background-color: var(--clr-Orange);
+
+  color: var(--clr-White);
+  margin-top: 1.4rem;
 }
 
 .btn-submit:active,
 .btn-submit:focus,
-.btn-submit:hover
-{
-    background-color: var(--clr-White);
-    color: var(--clr-Orange);
+.btn-submit:hover {
+  background-color: var(--clr-White);
+  color: var(--clr-Orange);
 }
 
-
-.thank_you_block{
-    /* display: none; */
-    text-align: center;
-    margin-top: 0;
+.thank_you_block {
+  display: none;
+  text-align: center;
+  margin-top: 0;
 }
 
-.thx_img{
-    /* border: 1px solid white; */
-    margin-inline: auto;
-    margin-bottom: 1.9rem;
+.thx_img {
+  margin-inline: auto;
+  margin-bottom: 1.9rem;
 }
 
 .ratting_status {
-    background-color:  hsl(216,14%, 20%);
-    /* border: 1px solid white; */
-    color: var(--clr-Orange);
-    margin-inline: 5rem;
-    /* padding: 0.1rem 0;
-    padding-top: 0.3rem; */
-    
-    padding: 0.1rem 0;
-    padding-top: 0.3rem;
-    border-radius: 2rem;
-    margin-bottom: 1.2rem;
+  background-color: hsl(216, 14%, 20%);
+  color: var(--clr-Orange);
+  margin-inline: 4.5rem;
+  padding-top: 0.4rem;
+  border-radius: 2rem;
+  margin-bottom: 1.2rem;
 }
 
-.thanks_msg{
-    color: var(--clr-Medium-Grey);
+.thanks_msg {
+  color: var(--clr-Medium-Grey);
 }
