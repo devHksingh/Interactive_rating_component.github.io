@@ -115,15 +115,15 @@ h1 {
   padding: 0.59rem;
   padding-inline: 1rem;
   border-radius: 50%;
-
+  
   background-color: hsl(216, 14%, 22%);
   color: hsl(216, 12%, 54%);
   font-weight: 700;
   margin: 0;
 }
 
-.rating_number a:hover,
-a:link {
+.rating_number a:hover
+ {
   background-color: var(--clr-Light-Grey);
   color: var(--clr-White);
 }
@@ -141,7 +141,8 @@ a:focus {
   border-radius: 1rem;
   font-weight: 700;
   background-color: var(--clr-Orange);
-
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
   color: var(--clr-White);
   margin-top: 1.4rem;
 }
